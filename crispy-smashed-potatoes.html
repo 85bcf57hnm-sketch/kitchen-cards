@@ -1,14 +1,15 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
 <title>Crispy Smashed Potatoes</title>
-<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" href="favicon.png">
+<meta name="apple-mobile-web-app-title" content="My Recipe Box"><style>
 :root{color-scheme:light dark;--bg:#fffdf9;--ink:#22201e;--mute:#6b645e;--red:#c7362b;--blue:#2856a8;--rule:#dfe6f3}
 @media(prefers-color-scheme:dark){:root{--bg:#1c1816;--ink:#efe9e4;--mute:#a89f98;--red:#ff6f61;--blue:#8fb0ff;--rule:#34405a}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 "Work Sans",system-ui,-apple-system,sans-serif}
 main{max-width:760px;margin:0 auto;padding:clamp(16px,4vw,40px)}
-h1,h2{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+h1,h2{font-weight:700;letter-spacing:-.01em;line-height:1.1;margin:0}
 h1{font-size:clamp(28px,6vw,44px);padding-bottom:12px;border-bottom:2px solid var(--red)}
 h2{font-size:24px;margin:28px 0 10px}
 a{color:var(--blue)}
@@ -18,12 +19,20 @@ ul.ing{list-style:none;padding:0;margin:0}ul.ing li{padding:8px 0;border-bottom:
 ul.ing li.hd{font-weight:600;border:0;padding-top:16px}
 ol.steps{padding-left:1.4em;margin:0}ol.steps li{padding:6px 0 10px}ol.steps li::marker{color:var(--red);font-weight:600}
 .notes{background:color-mix(in srgb,var(--blue) 9%,transparent);border-radius:8px;padding:14px 16px;margin-top:24px}
-.list a{display:block;padding:14px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink)}
-.list b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:22px;display:block}
-.list span{color:var(--mute);font-size:15px}
-.course{color:var(--red);font-weight:600;margin:28px 0 0;font-size:15px}
+main.wide{max-width:1100px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:14px;margin-top:18px}
+.panel{display:flex;flex-direction:column;gap:6px;min-height:120px;padding:16px;border-radius:12px;text-decoration:none;color:var(--ink);
+ background:color-mix(in srgb,var(--ink) 4%,var(--bg));border:1px solid var(--rule);border-top:4px solid var(--red)}
+.panel:active{transform:scale(.98)}
+.panel .ty{color:var(--red);font-size:13px;font-weight:600}
+.panel b{font-size:20px;line-height:1.2}
+.panel span{color:var(--mute);font-size:14px;margin-top:auto}
+.chips{display:flex;gap:8px;overflow-x:auto;margin-top:16px;scrollbar-width:none}
+.chips button{flex:none;font:inherit;font-size:16px;font-weight:600;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--rule);background:transparent;color:var(--ink)}
+.chips button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+.chips small{opacity:.75;margin-left:6px;font-weight:500}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Recipe", "name": "Crispy Smashed Potatoes", "recipeIngredient": ["1 1/2 lb baby Yukon Gold potatoes", "3 tbsp olive oil", "1 tsp flaky salt", "1/2 tsp black pepper", "2 cloves garlic, grated", "2 tbsp chopped parsley", "1 lemon, zested"], "recipeInstructions": [{"@type": "HowToStep", "text": "Boil potatoes in well-salted water until a knife slides in easily, about 20 minutes. Drain and let steam dry 5 minutes."}, {"@type": "HowToStep", "text": "Set the oven to air fry at 425°F. Oil a sheet pan."}, {"@type": "HowToStep", "text": "Smash each potato flat with the bottom of a glass. Brush tops with oil and season with salt and pepper."}, {"@type": "HowToStep", "text": "Air fry 20–25 minutes until deeply browned and crisp at the edges."}, {"@type": "HowToStep", "text": "Toss with garlic, parsley and lemon zest while hot."}], "recipeYield": "4 servings", "totalTime": "PT55M", "recipeCategory": "Side", "recipeCuisine": "American", "keywords": "sample, weeknight", "description": "Sample recipe — edit or delete anytime."}</script></head><body><main>
-<a class="back" href="./">← All recipes</a>
+<a class="back" href="./">← My Recipe Box</a>
 <h1>Crispy Smashed Potatoes</h1>
 <div class="meta"><span>Side</span><span>American</span><span>55 min</span><span>Serves 4</span></div>
 <h2>Ingredients</h2><ul class="ing"><li>1 1/2 lb baby Yukon Gold potatoes</li><li>3 tbsp olive oil</li><li>1 tsp flaky salt</li><li>1/2 tsp black pepper</li><li>2 cloves garlic, grated</li><li>2 tbsp chopped parsley</li><li>1 lemon, zested</li></ul>
