@@ -4,8 +4,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" href="favicon.png">
 <meta name="apple-mobile-web-app-title" content="My Recipe Box"><style>
-:root{color-scheme:light dark;--bg:#fffdf9;--ink:#22201e;--mute:#6b645e;--red:#c7362b;--blue:#2856a8;--rule:#dfe6f3}
-@media(prefers-color-scheme:dark){:root{--bg:#1c1816;--ink:#efe9e4;--mute:#a89f98;--red:#ff6f61;--blue:#8fb0ff;--rule:#34405a}}
+:root{color-scheme:light dark;--bg:#ececee;--card:#fff;--ink:#22201e;--mute:#6b645e;--red:#c7362b;--blue:#2856a8;--rule:#dfe6f3}
+@media(prefers-color-scheme:dark){:root{--bg:#1c1816;--card:#2a2522;--ink:#efe9e4;--mute:#a89f98;--red:#ff6f61;--blue:#8fb0ff;--rule:#34405a}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 "Work Sans",system-ui,-apple-system,sans-serif}
 main{max-width:760px;margin:0 auto;padding:clamp(16px,4vw,40px)}
@@ -22,13 +22,13 @@ ol.steps{padding-left:1.4em;margin:0}ol.steps li{padding:6px 0 10px}ol.steps li:
 main.wide{max-width:1100px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:14px;margin-top:18px}
 .panel{display:flex;flex-direction:column;gap:6px;min-height:120px;padding:16px;border-radius:12px;text-decoration:none;color:var(--ink);
- background:color-mix(in srgb,var(--ink) 4%,var(--bg));border:1px solid var(--rule);border-top:4px solid var(--red)}
+ background:var(--card);border:0;box-shadow:0 1px 2px rgba(0,0,0,.06),0 4px 14px -6px rgba(0,0,0,.18)}
 .panel:active{transform:scale(.98)}
 .panel .ty{color:var(--red);font-size:13px;font-weight:600}
 .panel b{font-size:20px;line-height:1.2}
 .panel span{color:var(--mute);font-size:14px;margin-top:auto}
 .chips{display:flex;gap:8px;overflow-x:auto;margin-top:16px;scrollbar-width:none}
-.chips button{flex:none;font:inherit;font-size:16px;font-weight:600;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--rule);background:transparent;color:var(--ink)}
+.chips button{flex:none;font:inherit;font-size:16px;font-weight:600;min-height:44px;padding:0 16px;border-radius:999px;border:0;background:var(--card);color:var(--ink)}
 .chips button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
 .chips small{opacity:.75;margin-left:6px;font-weight:500}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Recipe", "name": "Crispy Smashed Potatoes", "recipeIngredient": ["1 1/2 lb baby Yukon Gold potatoes", "3 tbsp olive oil", "1 tsp flaky salt", "1/2 tsp black pepper", "2 cloves garlic, grated", "2 tbsp chopped parsley", "1 lemon, zested"], "recipeInstructions": [{"@type": "HowToStep", "text": "Boil potatoes in well-salted water until a knife slides in easily, about 20 minutes. Drain and let steam dry 5 minutes."}, {"@type": "HowToStep", "text": "Set the oven to air fry at 425°F. Oil a sheet pan."}, {"@type": "HowToStep", "text": "Smash each potato flat with the bottom of a glass. Brush tops with oil and season with salt and pepper."}, {"@type": "HowToStep", "text": "Air fry 20–25 minutes until deeply browned and crisp at the edges."}, {"@type": "HowToStep", "text": "Toss with garlic, parsley and lemon zest while hot."}], "recipeYield": "4 servings", "totalTime": "PT55M", "recipeCategory": "Side", "recipeCuisine": "American", "keywords": "sample, weeknight", "description": "Sample recipe — edit or delete anytime."}</script></head><body><main>
