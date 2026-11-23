@@ -65,9 +65,9 @@ main.wide{max-width:1100px}
 .chips button{flex:none;font:inherit;font-size:16px;font-weight:600;min-height:44px;padding:0 16px;border-radius:999px;border:0;background:var(--card);color:var(--ink)}
 .chips button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
 .chips small{opacity:.75;margin-left:6px;font-weight:500}
-.panel{padding:0;overflow:hidden}.panel img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.panel{padding:0;overflow:hidden}.panel img{width:100%;height:90px;object-fit:cover;display:block}
 .panel .pb{display:flex;flex-direction:column;gap:6px;padding:12px 16px 16px;flex:1}
-.hero{width:100%;aspect-ratio:16/9;max-height:300px;object-fit:cover;border-radius:12px;display:block;margin-bottom:18px}
+.hero{width:100%;height:clamp(100px,22vw,150px);object-fit:cover;border-radius:12px;display:block;margin-bottom:18px}
 .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.top h1{flex:1;border:0;padding:0}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--red);color:#fff;font-weight:600;text-decoration:none}
 .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.bar .back{margin:0}
