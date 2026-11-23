@@ -5,6 +5,7 @@ Usage: python3 build.py recipes.json out_dir [site_url]
 import html, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import art
+from units import to_imperial
 APP = "https://claude.ai/artifact/FUn136U2aoJBKZ9ieSs3Xf"
 
 src, out = sys.argv[1], sys.argv[2]
@@ -84,7 +85,8 @@ def head(title, extra=""):
 used, index = set(), []
 for r in recipes:
     s = slug(r.get("title"), used)
-    ings = r.get("ingredients") or []
+    ings = [to_imperial(i) for i in (r.get("ingredients") or [])]
+    r = {**r, "steps": [to_imperial(t) for t in (r.get("steps") or [])], "notes": to_imperial(r.get("notes") or "")}
     ld = {"@context": "https://schema.org", "@type": "Recipe", "name": r.get("title", ""),
           "recipeIngredient": [i for i in ings if not i.endswith(":")],
           "recipeInstructions": [{"@type": "HowToStep", "text": t} for t in (r.get("steps") or [])]}
